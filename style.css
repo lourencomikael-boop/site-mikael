@@ -48,6 +48,16 @@ nav {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mobile-phone {
+    display: none;
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
 }
 
 nav ul {
@@ -337,5 +347,9 @@ footer {
     
     nav ul {
         display: none; /* Simplification for mobile - typically would add a hamburger menu */
+    }
+
+    .mobile-phone {
+        display: inline-block;
     }
 }
