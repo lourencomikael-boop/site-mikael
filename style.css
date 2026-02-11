@@ -35,7 +35,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 5%; /* Reduced padding so logo fills the space */
+    padding: 0.5rem 2%; /* Reduced side padding to 2% to move logo closer to edge */
     /* Fixed positioning top-right */
     position: fixed;
     top: 0;
