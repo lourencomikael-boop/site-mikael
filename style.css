@@ -35,7 +35,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%; /* Increased top/bottom padding */
+    padding: 0.5rem 5%; /* Reduced padding so logo fills the space */
     /* Fixed positioning top-right */
     position: fixed;
     top: 0;
@@ -67,7 +67,7 @@ nav {
 }
 
 .logo-mikael {
-    height: 30px;
+    height: 80px; /* Increased size to fill header */
     width: auto;
     border-radius: 5px;
     animation: logoFloatGlow 3s ease-in-out infinite;
