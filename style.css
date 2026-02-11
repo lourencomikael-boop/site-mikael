@@ -35,7 +35,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
+    padding: 1.5rem 5%; /* Increased top/bottom padding */
     /* Fixed positioning top-right */
     position: fixed;
     top: 0;
