@@ -67,7 +67,7 @@ nav {
 }
 
 .logo-mikael {
-    height: 30px;
+    height: 50px; /* Increased from 30px to 50px */
     width: auto;
     border-radius: 5px;
     animation: logoFloatGlow 3s ease-in-out infinite;
