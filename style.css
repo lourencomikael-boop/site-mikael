@@ -58,9 +58,18 @@ nav {
 
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Smaller logo */
     font-weight: 600;
     color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    height: 30px;
+    width: auto;
+    border-radius: 5px; /* Optional: adds a slight curve to the logo */
 }
 
 nav ul {
