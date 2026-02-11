@@ -66,10 +66,23 @@ nav {
     gap: 0.5rem;
 }
 
-.logo img {
+.logo-mikael {
     height: 30px;
     width: auto;
-    border-radius: 5px; /* Optional: adds a slight curve to the logo */
+    border-radius: 5px;
+    animation: logoFloatGlow 3s ease-in-out infinite;
+    will-change: transform, filter; /* Optimizes performance */
+}
+
+@keyframes logoFloatGlow {
+    0%, 100% {
+        transform: translateY(0);
+        filter: drop-shadow(0 0 2px rgba(58, 134, 255, 0.3));
+    }
+    50% {
+        transform: translateY(-4px); /* Gentle float up */
+        filter: drop-shadow(0 0 8px rgba(58, 134, 255, 0.7)); /* Blue glow intensity increase */
+    }
 }
 
 nav ul {
