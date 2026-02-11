@@ -58,20 +58,41 @@ nav {
 
 
 .logo {
-    font-size: 1.2rem; /* Smaller logo */
+    /* font-size removed, now controlled by inner elements */
     font-weight: 600;
     color: var(--primary-color);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 10px; /* Space between icon and text */
 }
 
 .logo-mikael {
-    height: 80px; /* Increased size to fill header */
+    height: 50px; /* Adjusted size to match text */
     width: auto;
     border-radius: 5px;
     animation: logoFloatGlow 3s ease-in-out infinite;
-    will-change: transform, filter; /* Optimizes performance */
+    will-change: transform, filter;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+    text-align: left;
+}
+
+.logo-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2c3e50; /* Dark color for MIKAEL */
+    letter-spacing: 1px;
+}
+
+.logo-subtitle {
+    font-size: 0.65rem;
+    color: var(--primary-color); /* Blue for WEB & DESIGN */
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 @keyframes logoFloatGlow {
