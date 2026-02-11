@@ -67,28 +67,21 @@ nav {
 }
 
 .logo-mikael {
-    height: 50px;
+    height: 30px;
     width: auto;
     border-radius: 5px;
-    /* Animation: 4s for slower, more elegant movement */
-    animation: logoFloatGlow 4s ease-in-out infinite;
-    will-change: transform, filter;
+    animation: logoFloatGlow 3s ease-in-out infinite;
+    will-change: transform, filter; /* Optimizes performance */
 }
 
 @keyframes logoFloatGlow {
-    0% {
+    0%, 100% {
         transform: translateY(0);
-        /* Subtle starting glow */
-        filter: drop-shadow(0 0 2px rgba(58, 134, 255, 0.2)) brightness(1);
+        filter: drop-shadow(0 0 2px rgba(58, 134, 255, 0.3));
     }
     50% {
-        transform: translateY(-6px); /* Smooth float up */
-        /* Intensified blue glow + brightness to simulate light hitting it */
-        filter: drop-shadow(0 0 12px rgba(58, 134, 255, 0.6)) brightness(1.15);
-    }
-    100% {
-        transform: translateY(0);
-        filter: drop-shadow(0 0 2px rgba(58, 134, 255, 0.2)) brightness(1);
+        transform: translateY(-10px); /* Moves up 10px */
+        filter: drop-shadow(0 0 8px rgba(58, 134, 255, 0.7)); /* Blue glow intensity increase */
     }
 }
 
