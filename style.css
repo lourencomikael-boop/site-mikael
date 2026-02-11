@@ -33,9 +33,9 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 2%; /* Reduced side padding to 2% to move logo closer to edge */
+    justify-content: space-between;
+    padding: 12px 18px;
     /* Fixed positioning top-right */
     position: fixed;
     top: 0;
@@ -57,7 +57,7 @@ nav {
 }
 
 
-.logo {
+.brand-logo {
     /* font-size removed, now controlled by inner elements */
     font-weight: 600;
     color: var(--primary-color);
@@ -67,7 +67,7 @@ nav {
 }
 
 .logo-mikael {
-    height: 50px; /* Adjusted size to match text */
+    height: 42px; /* Adjusted to 42px as requested */
     width: auto;
     border-radius: 5px;
     animation: logoFloatGlow 3s ease-in-out infinite;
@@ -106,18 +106,18 @@ nav {
     }
 }
 
-nav ul {
+.nav-menu {
     list-style: none;
     display: flex;
     gap: 2rem;
 }
 
-nav ul li a {
+.nav-menu li a {
     font-weight: 500;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
+.nav-menu li a:hover {
     color: var(--primary-color);
 }
 
@@ -450,7 +450,7 @@ footer {
         padding: 0.5rem 5%;
     }
 
-    nav ul {
+    .nav-menu {
         display: flex; /* Show menu on mobile */
         gap: 1rem;
         font-size: 0.8rem; /* Smaller font for mobile */
@@ -458,7 +458,7 @@ footer {
         margin: 0;
     }
     
-    nav ul li a {
+    .nav-menu li a {
         padding: 0.5rem;
     }
     
